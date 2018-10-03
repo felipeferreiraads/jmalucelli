@@ -15,8 +15,8 @@ module.exports = {
       components: 'src/components/**/*.js'
     },
     {
-      name: 'Forms',
-      components: 'src/forms/**/*.js'
+      name: 'Screens',
+      components: 'src/screens/**/*.js'
     }
   ],
   theme: {

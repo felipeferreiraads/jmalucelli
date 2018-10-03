@@ -1,0 +1,1 @@
+Container base para a aplicação
