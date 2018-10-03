@@ -1,7 +1,7 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import Filter from '.'
+import LabelError from '.'
 
 it('renders without crashing', () => {
-  shallow(<Filter />)
+  shallow(<LabelError>Error</LabelError>)
 })

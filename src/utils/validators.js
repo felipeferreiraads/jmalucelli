@@ -1,5 +1,6 @@
 import isEmail from 'is-email'
 import { memoizeWith, identity } from 'ramda'
+import CNPJ from 'cnpj'
 
 /**
  * Required.
@@ -52,3 +53,10 @@ export const cep = value => value && !/\d{8}/.test(value) &&
 export const integer = value =>
   (value && parseInt(value, 10) !== value) &&
   'Número inteiro inválido'
+
+/**
+ * CNPJ.
+ */
+
+export const cnpj = value =>
+  !CNPJ.validate(value) && 'CNPJ inválido'

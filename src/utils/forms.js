@@ -20,6 +20,19 @@ export const required = {
 }
 
 /**
+ * CNPJ.
+ */
+
+export const cnpj = {
+  type: 'tel',
+  format: formatters.cnpj,
+  parse: parsers.cnpj,
+  validate: validators.cnpj
+}
+
+export const cnpjRequired = createRequired(cnpj)
+
+/**
  * E-mail.
  */
 

@@ -4,8 +4,9 @@ import Text from 'components/Text'
 import Icon from 'components/Icon'
 import VerticalSpacer from 'components/VerticalSpacer'
 import { Container, Result, Input } from './styles'
+import { cnpj as format } from 'utils/formatters'
 
-export default function CardResult (props) {
+export default function CardResult ({ cnpj }) {
   return (
     <Container>
       <VerticalSpacer spacing={15}>
@@ -16,9 +17,9 @@ export default function CardResult (props) {
           CNPJ / Empresa
         </Text>
         <Result>
-          <Text>12.345.678/0001-23</Text>
+          <Text>{format(cnpj)}</Text>
           <Input>
-            <input type='radio' />
+            <input type='checkbox' />
             <Icon
               icon='check-circle'
               color='white'
@@ -32,5 +33,6 @@ export default function CardResult (props) {
 }
 
 CardResult.propTypes = {
-
+  /** CNPJ do card */
+  cnpj: PropTypes.string.isRequired
 }

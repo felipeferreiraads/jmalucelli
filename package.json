@@ -14,6 +14,7 @@
     "g": "yarn generate"
   },
   "dependencies": {
+    "cnpj": "^1.0.2",
     "final-form": "^4.10.0",
     "is-email": "^1.0.0",
     "is-object": "^1.0.1",

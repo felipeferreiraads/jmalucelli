@@ -1,17 +1,21 @@
+const data = [
+  '30833772000175',
+  '33062394000161',
+  '78917581000118',
+  '21478890000111'
+]
+
 export default {
-  quote (cnpj) {
-    return new Promise((resolve, reject) => setTimeout(() => {
-      if(cnpj === '12345678/000123') {
-        resolve({
-          data: {
-            cnpj: '12345678/000123'
-          }
-        })
-      } else {
-        reject({
-          error: 'CNPJ não encontrado'
-        })
-      }
+  fetch (cnpj) {
+    return new Promise(resolve => setTimeout(() => {
+      const res = data.reduce((acumulator, nextValue) => {
+        if(nextValue ===  cnpj) {
+          acumulator = cnpj
+        }
+
+        return acumulator
+      }, '')
+      resolve(res)
     }, 500))
   }
 }
