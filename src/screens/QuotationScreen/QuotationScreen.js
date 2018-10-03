@@ -29,6 +29,7 @@ export default class QuotationScreen extends React.Component {
           })
         } else {
           this.setState({
+            cnpj: '',
             error: 'Nenhum CNPJ encontrado.'
           })
         }
@@ -60,7 +61,7 @@ export default class QuotationScreen extends React.Component {
                       <CardResult cnpj={this.state.cnpj} />
                     )}
                     {this.state.error && (
-                      <LabelError>
+                      <LabelError style={{ paddingLeft: 20 }}>
                         {this.state.error}
                       </LabelError>
                     )}
