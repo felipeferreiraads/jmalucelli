@@ -3,7 +3,7 @@
 
 <Icon icon='check-circle' />
 
-<Icon icon='chart' />
+<Icon icon='line-chart' />
 ```
 
 Através das props `color` e `size`, é possível alterar as cores e tamanho do ícone:

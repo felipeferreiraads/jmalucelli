@@ -5,7 +5,7 @@ import { StyledWrapper } from './styles'
 export default function Wrapper (props) {
   return (
     <Container>
-      <StyledWrapper />
+      <StyledWrapper {...props} />
     </Container>
   )
 }

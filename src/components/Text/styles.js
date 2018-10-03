@@ -19,7 +19,7 @@ export const TextStyled = styled(Base)`
   margin: 0;
   padding: 0;
   text-align: ${prop('align')};
-  font-weight: 600;
+  font-weight: 500;
   ${responsiveProp('lineHeight', value => `
     line-height: ${value};
   `)}

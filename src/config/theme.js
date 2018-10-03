@@ -5,11 +5,13 @@ export default {
     success: '#1ED699',
     warning: '#F2B822',
     danger: '#F26722',
-    text: '#828282',
-    background: '#E5E5E5',
-    border: '#BFBFBF',
+    text: '#5e6776',
+    background: '#f2f6f8',
+    border: '#a9b1b8',
     white: '#FFFFFF',
-    gray: '#EDEDED'
+    gray: '#CCC',
+    grayLight: '#f1f1f1',
+    blue: '#32cccc'
   },
 
   fonts: {

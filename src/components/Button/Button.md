@@ -1,5 +1,7 @@
 ```
-<Button>
-    Enviar
-</Button>
+<Button
+  text='Enviar'
+	color='white'
+	background='primary'
+/>
 ```
